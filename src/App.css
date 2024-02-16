@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+    format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+.App {
+  padding: 20px;
+  font-family: 'Pretendard-Regular';
+  min-height: 100vh;
+}
+
+.menu-wrapper {
+  margin: 20px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  & .ControlMenu {
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ECECEC;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  & .right-col {
+    flex-grow: 1;
+    & button {
+      width: 100%;
+    }
+  }
+}
+
+/* weekcard */
+
+.weekcard {
+  & h2{
+    margin: 0px 0px 8px 0px;
+    font-weight: 600;
+    font-size: 18px;
+    
+  }
+  & p{
+    margin: 0px 0px 20px 0px;
+    font-size: 15px;
+    color: #c0c0c0;
+  }
+  & .weekcard_section{
+
+    & .weekcard_section_img{
+      display: flex;
+      flex-grow: 1;
+      & .weekcard_img{
+        max-width: 310px;
+
+        margin-right: 18px;
+        border-radius: 12px;
+      }
+    }
+  }
+}
