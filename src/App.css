@@ -5,10 +5,53 @@
   font-weight: 400;
   font-style: normal;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 .App {
-  padding: 20px;
   font-family: 'Pretendard-Regular';
   min-height: 100vh;
+}
+
+.header {
+  height: 100%;
+  min-height: 7.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 4rem;
+  & .logo {
+    width: 10.5rem;
+  }
+  & .navbar {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+    justify-content: center;
+    & a {
+      min-width: 4rem;
+      padding: 0 1.2rem;
+      font-size: 1.6rem;
+    }
+    & .profile-wrapper {
+      border: 1px solid #d6d6d6;
+      border-radius: 20rem;
+      min-height: 4rem;
+      display: flex;
+      gap: 0.6rem;
+      padding: 0 1.2rem;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
 
 .menu-wrapper {
@@ -19,7 +62,7 @@
     margin-right: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #ECECEC;
+    background-color: #ececec;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 18px;
@@ -35,28 +78,34 @@
 /* weekcard */
 
 .weekcard {
-  & h2{
+  & h2 {
     margin: 0px 0px 8px 0px;
     font-weight: 600;
-    font-size: 18px;
-    
+    font-size: 1.8rem;
   }
-  & p{
+  & p {
     margin: 0px 0px 20px 0px;
-    font-size: 15px;
+    font-size: 1.5rem;
     color: #c0c0c0;
   }
-  & .weekcard_section{
-
-    & .weekcard_section_img{
+  & .weekcard_section {
+    & .weekcard_section_img {
       display: flex;
       flex-grow: 1;
-      & .weekcard_img{
+      & .weekcard_img {
         max-width: 310px;
 
         margin-right: 18px;
         border-radius: 12px;
       }
     }
+  }
+}
+
+@media (min-width: 912px) {
+  .header {
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 120rem;
   }
 }
