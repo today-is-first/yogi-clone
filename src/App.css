@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "Pretendard-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-    format("woff");
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+    format('woff');
   font-weight: 400;
   font-style: normal;
 }
@@ -16,7 +16,7 @@ html {
 }
 
 .App {
-  font-family: "Pretendard-Regular";
+  font-family: 'Pretendard-Regular';
   min-height: 100vh;
 }
 
@@ -61,6 +61,7 @@ html {
   max-width: 120rem;
   padding: 0 4rem;
   margin: 0 auto;
+  position: relative;
   & .title {
     padding: 1.6rem 0rem;
     & h2 {
@@ -109,6 +110,39 @@ html {
         border-radius: 12px;
       }
     }
+  }
+}
+
+/* CardSlider */
+
+.card-slider {
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+.btn-wrapper {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  max-width: 118rem;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  & button {
+    width: 4rem;
+    height: 4rem;
+    z-index: 10;
+    border: none;
+    cursor: pointer;
+    border-radius: 50rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  & .next-btn {
+    right: 0rem;
+  }
+  & .prev-btn {
+    left: 0rem;
   }
 }
 

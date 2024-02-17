@@ -1,6 +1,7 @@
 import Logo from '../../public/asset/Logo.svg';
 import menu from '../../public/asset/menu.svg';
 import person from '../../public/asset/person_outline.svg';
+
 const Header = () => {
   return (
     <section className="header">

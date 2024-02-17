@@ -29,6 +29,26 @@ const DomesticTripCardList = [
     img: `../public/asset/tripCardImg/tripcard-domestic-6.png`,
     name: '인천',
   },
+  {
+    id: 7,
+    img: `../public/asset/tripCardImg/tripcard-domestic-7.png`,
+    name: '해운대',
+  },
+  {
+    id: 8,
+    img: `../public/asset/tripCardImg/tripcard-domestic-8.png`,
+    name: '가평',
+  },
+  {
+    id: 9,
+    img: `../public/asset/tripCardImg/tripcard-domestic-9.png`,
+    name: '여수',
+  },
+  {
+    id: 10,
+    img: `../public/asset/tripCardImg/tripcard-domestic-10.png`,
+    name: '속초',
+  },
 ];
 
 const OverseasTripCardList = [
@@ -61,6 +81,26 @@ const OverseasTripCardList = [
     id: 6,
     img: `../public/asset/tripCardImg/tripcard-overseas-6.png`,
     name: '나트랑 / 나짱',
+  },
+  {
+    id: 7,
+    img: `../public/asset/tripCardImg/tripcard-overseas-7.png`,
+    name: '코타키나발루',
+  },
+  {
+    id: 8,
+    img: `../public/asset/tripCardImg/tripcard-overseas-8.png`,
+    name: '싱가포르',
+  },
+  {
+    id: 9,
+    img: `../public/asset/tripCardImg/tripcard-overseas-9.png`,
+    name: '방콕',
+  },
+  {
+    id: 10,
+    img: `../public/asset/tripCardImg/tripcard-overseas-10.png`,
+    name: '교토',
   },
 ];
 
