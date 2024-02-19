@@ -20,8 +20,8 @@ const CardSlider = ({ sliderRef, children }) => {
     return sliderRef.current.slickPrev();
   };
   return (
-    <>
-      <Slider ref={sliderRef} {...settings} className="card-slider">
+    <div className="card-slider">
+      <Slider ref={sliderRef} {...settings}>
         {children}
       </Slider>
       <div className="btn-wrapper">
@@ -32,7 +32,7 @@ const CardSlider = ({ sliderRef, children }) => {
           <img src={nextIcon} />
         </button>
       </div>
-    </>
+    </div>
   );
 };
 
