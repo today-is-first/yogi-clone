@@ -69,15 +69,13 @@ html {
       color: rgb(51 51 51);
     }
   }
-  & .card-wrapper {
-    display: flex;
-    justify-content: space-evenly;
-  }
   & .card {
-    max-width: 17rem;
     display: flex;
     flex-direction: column;
-    margin-right: 2.4rem;
+    width: 80%;
+    & img {
+      border-radius: 1rem;
+    }
     & span {
       padding: 1.2rem 0.4rem 2rem 0.4rem;
       color: rgb(51 51 51);
@@ -116,33 +114,36 @@ html {
 /* CardSlider */
 
 .card-slider {
-  padding: 0 2rem;
-  box-sizing: border-box;
-}
-.btn-wrapper {
-  display: flex;
-  padding: 0;
-  justify-content: space-between;
-  width: 100%;
-  margin: auto;
-  max-width: 118rem;
-  top: 50%;
-  position: absolute;
-  transform: translateY(-50%);
-  & button {
-    width: 4rem;
-    height: 4rem;
-    z-index: 10;
-    border: none;
-    cursor: pointer;
-    border-radius: 50rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  & .next-btn {
-    right: 0rem;
-  }
-  & .prev-btn {
-    left: 0rem;
+  .btn-wrapper {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 120rem;
+    margin: auto;
+    padding: 0 2rem;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    & button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 4rem;
+      height: 4rem;
+      z-index: 10;
+      border: none;
+      cursor: pointer;
+      border-radius: 50rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    & .next-btn {
+      right: 0rem;
+    }
+    & .prev-btn {
+      left: 0rem;
+    }
   }
 }
 
