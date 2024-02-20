@@ -58,15 +58,15 @@ html {
 /* MainEvent */
 @media (min-width: 912px) {
   .MainEvent {
-  max-width: 120rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
 }
 
 .MainEvent-Top {
-    padding: 1.6rem 4rem;
+  padding: 1.6rem 4rem;
 }
 
 .MainEvent-Text {
@@ -75,27 +75,27 @@ html {
   justify-content: space-between;
   & h2 {
     font-size: 1.8rem;
-      & span {
-        font-size: 1.4rem; 
-        color: #1273E4;
-      }
-    }    
+    & span {
+      font-size: 1.4rem;
+      color: #1273e4;
+    }
+  }
 }
 
 .MainEvent-carousel {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    padding-left: 0;
-    padding-right: 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .slick-slider.card-slider.slick-initialized {
-    width: 120rem; 
-    max-width: 100%;
-    padding: 0px;
-    justify-content: center;
-}   
+  width: 120rem;
+  max-width: 100%;
+  padding: 0px;
+  justify-content: center;
+}
 
 .slick-list {
   display: flex;
@@ -107,15 +107,14 @@ html {
 }
 
 .slick-track {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    display: flex;
-    transition-property: transform;
-    box-sizing: content-box;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
 }
-
 
 .MainEventCard {
   display: flex;
@@ -123,24 +122,26 @@ html {
   position: relative;
   justify-content: space-between;
   margin-right: 24px;
-    & img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 12px;
-      position: absolute;
-      top: 0; 
-      left: 0;
-    }
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
+.MainEventcard {
+  & img {
+    border-radius: 2rem;
+  }
+}
 
 .slick.active {
-  color: #007AFF;
+  color: #007aff;
 }
-
-
-
 
 /* tripcard */
 
