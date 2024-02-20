@@ -11,6 +11,7 @@ const CardSlider = ({ sliderRef, children }) => {
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 4,
+    arrows: false,
   };
   const next = () => {
     return sliderRef.current.slickNext();
@@ -21,17 +22,15 @@ const CardSlider = ({ sliderRef, children }) => {
   };
   return (
     <div className="card-slider">
+      <button onClick={previous} className="prev-btn">
+        <img src={prevIcon} />
+      </button>
       <Slider ref={sliderRef} {...settings}>
         {children}
       </Slider>
-      <div className="btn-wrapper">
-        <button onClick={previous} className="prev-btn">
-          <img src={prevIcon} />
-        </button>
-        <button onClick={next} className="next-btn">
-          <img src={nextIcon} />
-        </button>
-      </div>
+      <button onClick={next} className="next-btn">
+        <img src={nextIcon} />
+      </button>
     </div>
   );
 };

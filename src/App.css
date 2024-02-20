@@ -75,6 +75,10 @@ html {
     width: 80%;
     & img {
       border-radius: 1rem;
+      transition: filter 0.3s ease;
+    }
+    & img:hover {
+      filter: brightness(80%);
     }
     & span {
       padding: 1.2rem 0.4rem 2rem 0.4rem;
@@ -114,6 +118,36 @@ html {
 /* CardSlider */
 
 .card-slider {
+  display: flexbox;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 120rem;
+  position: relative;
+  & button {
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 50rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  & .prev-btn {
+    left: -2rem;
+    top: 40%;
+    transform: translate(0, -50%);
+  }
+  & .next-btn {
+    right: 2rem;
+    top: 40%;
+    transform: translate(0, -50%);
+  }
+}
+/* .card-slider {
   .btn-wrapper {
     display: flex;
     padding: 0;
@@ -145,15 +179,8 @@ html {
       left: 0rem;
     }
   }
-}
+} */
 
-@media (min-width: 912px) {
-  .header {
-    padding-left: 40px;
-    padding-right: 40px;
-    max-width: 120rem;
-  }
-}
 .category {
   height: 34px;
 }
