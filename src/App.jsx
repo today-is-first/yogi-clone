@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
+import MainEvent from "./components/MainEvent";
 import TripCard from "./components/TripCard";
 import WeekCard from "./components/WeekCard";
 
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <MainEvent />
       <TripCard
         title={"국내 인기 여행지"}
         tripCardList={DomesticTripCardList}
