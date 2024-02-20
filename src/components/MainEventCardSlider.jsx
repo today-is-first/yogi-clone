@@ -13,27 +13,13 @@ const MainEventCardSlider = ({ sliderRef, children }) => {
     slidesToScroll: 3,
     autoplay: true,
     autoplaySpeed: 5000,
-  };
-  const next = () => {
-    return sliderRef.current.slickNext();
-  };
-
-  const previous = () => {
-    return sliderRef.current.slickPrev();
+    arrows: false,
   };
   return (
     <>
       <Slider ref={sliderRef} {...settings} className="card-slider">
         {children}
       </Slider>
-      <div className="btn-wrapper">
-        <button onClick={previous} className="prev-btn">
-          <img src={prevIcon} />
-        </button>
-        <button onClick={next} className="next-btn">
-          <img src={nextIcon} />
-        </button>
-      </div>
     </>
   );
 };
